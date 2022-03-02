@@ -128,6 +128,10 @@ export const Search = ({ data }: DataProps): JSX.Element => {
     setDisplayedMetrics(metrics);
   };
 
+  useEffect(() => {
+    if (!valueData.valueTo) setDisplayedMetrics(data);
+  }, [valueData, data]);
+
   return (
     <S.Container>
       <S.WrapperTop>

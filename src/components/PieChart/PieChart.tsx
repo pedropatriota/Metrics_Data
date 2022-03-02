@@ -138,7 +138,6 @@ export const PieChart = ({ metrics }: PieProps): JSX.Element => {
       style={{
         display: "flex",
         alignItems: "center",
-        flexWrap: "wrap",
         gap: "20px",
         width: "250px",
         margin: "50px 0",
